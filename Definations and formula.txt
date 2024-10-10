@@ -1,0 +1,34 @@
+Name: Kashyap S
+
+Definations:
+
+Scalar : It is a unit quantity which only has magnitude but no direction.
+	Ex : mass, distance etc..
+
+Vector : It is a unit quantity which had both magnitude and direction.
+	Ex : Velocity ar certain direction, Force etc..
+
+Quaternions: Mathematical notation which representing spatial orientations and rotations of elements in three dimensional space.
+       Ex: They are used in computer graphics, robotics, and aerospace applications for representing rotations.
+It contails 1 scalar (real number) and 3 vector which points to imaginary direction(3D)
+
+Quaternious formulae:
+
+q1 = a+bi+cj+dk   and    q2 = e+fi+gj+hk
+
+Dot product:
+q1 . q2 = a*e + b*f + c*g + d*h
+
+Multiplication:
+q1 * q2 = ae + afi + agj + ahk + bei + bfii + bgij + bhik + cej + cfji + cgjj + chjk + dek + dfki + dgkj + dhkk.
+    In quaternious,  
+     ii = jj == kk = ijk = -1;
+     using ijk = -1 and multiplying with i and further calculations we get,
+     jk = i and kj = -i
+     ji = -k and ij = k
+     ki = j and ik = -j.   By substituting all this we get,
+
+ q1*q2  = ( (ae-bf-cg-dh), (af+be+ch-dg)i, (ag-bh+ce+df)j,(ah+bg-cf+de)k ).
+
+Using this equations we solve the given solution.
+
